@@ -1,0 +1,1358 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+    background-color: #0f1722;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif; /* Добавлен запасной шрифт */
+    font-size: 2vh;
+    margin: 0; /* Убираем отступы по умолчанию у body */
+    min-height: 100vh;
+}
+
+.fon {
+    --header-background-image-height: 24.8vh;
+    --theme-background-image-opacity: 1;
+    background-image: linear-gradient(to bottom, transparent, #0f1722 80%), url('image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: var(--header-background-image-height);
+    margin-bottom: calc(var(--header-background-image-height) * -1);
+    opacity: var(--theme-background-image-opacity);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+
+header {
+    width: 100%;
+    height: 13vh; /* Высота заголовка в процентах от высоты вьюпорта */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.logo img {
+    height: 15vh; /* Высота логотипа */
+    margin-top: 10vh; /* Добавляем отступ сверху */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh; /* Высота заголовка, чтобы не накладывался контент навигации */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем отступы по умолчанию */
+}
+
+nav ul li {
+    margin: 0 0.5vh;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 0.5vh 4vh;
+}
+
+main {
+    margin-top: 7.5vh; /* Отступ от шапки */
+    display: flex;     /* Используем Flexbox для центровки */
+    justify-content: center; /* Центруем контейнер по горизонтали */
+    align-items: flex-start; /* Выровнять контейнер по верхней части */
+    margin-bottom: 4vh;
+}
+
+.conteiner {
+    background-color: #161F2C;
+    display: flex;
+    flex-direction: column; /* Вертикальное размещение содержимого */
+    justify-content: center; /* Центрируем содержимое по вертикали внутри контейнера */
+    align-items: center;    /* Центрируем содержимое по горизонтали */
+    border-radius: 2vh;   /* Закругленные углы */
+    width: 150vh;          /* Ширина контейнера */
+}
+
+.name {
+    color: #D80029;
+    font-family: "Secular One";
+    margin-top: 5vh;
+    margin-left: -110vh;
+}
+
+.line1 {
+    border: none;
+    margin-left: 7.5vh;
+    height: 0.3vh;
+    width: 50vh;
+    background-color: #D80029;
+    margin-top: -2vh;
+    margin-bottom: 4vh;
+}
+
+p {
+    margin-top: 0.5vh;
+    color: #DCDCDC;
+    margin-left: 7.5vh;
+    margin-right: 6vw;
+    line-height: 3vh;
+}
+
+.foto1 img {
+    height: 43vh;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.text {
+    margin-right: 35vw;
+    margin-top: 4vh;
+}
+
+.wapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.slide {
+    height: 35vh;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+
+.slide::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    margin-left: 35vw;
+    margin-top: -39vh;
+    width: 20.1vw;
+}
+
+.control {
+    display: flex;
+    margin-top: 1vh;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: auto;
+    column-gap: 0.2vw;
+}
+
+.control a {
+    background-color: #DCDCDC;
+    width: 0.7vw;
+    height: 1.5vh;
+    border-radius: 50%;
+    opacity: 40%;
+}
+
+.foto2 {
+    margin-left: -35vw;
+    margin-top: 6vh;
+}
+
+.text1 {
+    margin-left: 33vw;
+    margin-top: -24vh;
+    margin-right: 3vw;
+    margin-bottom: 10vh;
+}
+
+.title {
+    color: #D80029;
+    font-family: "Secular One";
+    margin-top: -2vh;
+}
+
+.line {
+    margin-top: -1vh;
+    border: none;
+    height: 0.3vh;
+    width: 70vh;
+    background-color: #D80029;
+}
+
+.foto2 img, .foto3 img, .foto5 img, .foto6 img {
+    height: 35vh;
+}
+
+.foto3 {
+    margin-left: 35vw;
+    margin-top: -25vh;
+}
+
+.text3 {
+    margin-top: 12vh;
+    margin-right: 30vw;
+}
+
+.foto4 img {
+    margin-top: 3vh;
+    width: 60vw;
+}
+
+.text4 {
+    margin-left: 30vw;
+    margin-top: -28vh;
+    margin-right: 3vw;
+}
+
+.foto5 {
+    margin-left: 35vw;
+    margin-top: 9vh;
+}
+
+.text5, .text5-1 {
+    margin-right: 30vw;
+    margin-top: -20vh;
+    margin-bottom: 12vh;
+}
+
+.container1 {
+    margin-left: 35vw;
+    margin-top: 3vh;
+    width: 20.1vw;
+}
+
+.text6 {
+    margin-right: 30vw;
+    margin-top: -22vh;
+    margin-bottom: 17vh;
+}
+
+.foto6 {
+    margin-left: 35vw;
+    margin-top: 5vh;
+}
+
+.foto7 {
+    margin-left: 35vw;
+    margin-top: 14vh;
+}
+
+.opisanie, .opisanie2 {
+    margin-right: 32vw;
+    margin-top: -20vh;
+    margin-bottom: 10vh;
+}
+
+.opisanie1 {
+    margin-right: 30vw;
+    margin-top: -25vh;
+}
+
+.foto7 img {
+    height: 35vh;
+}
+
+footer {
+    background-color: #111111;
+    width: 100%;
+    height: 1%; /* Высота в процентах от высоты вьюпорта */
+    bottom: 0;
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+a {
+    text-decoration: none;
+}
+
+.flogo {
+    margin-right: auto; /* Отодвигает текст вправо */
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+}
+
+.flogo img {
+    height: 11.5vh; /* Высота логотипа */
+}
+
+.ftext {
+    color: #fff;
+    font-family: 'Secular One', sans-serif; /* Добавлен запасной шрифт */
+    font-size: 1.5vh;
+    margin-top: 7.5vh;
+    margin-left: -49.5vw;
+    flex-grow: 1; /* Позволяет тексту занимать оставшееся пространство */
+    text-align: center; /* Выравнивание текста по центру */
+    user-select: none; /*Запрещает копирование текста*/
+}
+
+.ogran {
+    margin-left: auto;
+    margin-top: 2vh;
+    margin-right: 3vh;
+}
+
+.ogran img {
+    height: 6vh;
+    border-radius: 1vh;
+}
+
+.seti img {
+    height: 4vh;
+    border-radius: 1.5vh;
+}
+
+.seti {
+    margin-left: 27vw;
+    margin-top: -1.5vh;
+}
+
+.logo_val img {
+    height: 9vh;
+}
+
+.logo_val {
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 320px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: -0.5vh;
+    }
+
+    nav {
+        margin-left: -20vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 0.8em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text {
+        font-size: 1em;
+        margin-left: -1vw; /* Корректируем отступ справа */
+        margin-right: 7vw;
+        margin-bottom: 40vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+    }
+
+    .foto1 img {
+        height: 12vh;
+        margin-bottom: -4vh;
+    }
+
+    .wapper {
+        width: 90vw;
+        margin-left: -53vw;
+    }
+    .slide img {
+        width: 90vw;
+    }
+
+    .control a {
+        width: 3vw;
+        height: 2vh;
+        padding: 0.1vh 0.2vh;
+    }
+
+    .foto2 img {
+        height: 32vh;
+        margin-left: 35vw;
+        margin-bottom: 27vh;
+    }
+
+    .text1 {
+        margin-right: 4vw;
+        margin-left: 0.5vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+
+    .line {
+        width: 85vw;
+    }
+
+    .text3 {
+        font-size: 1em;
+        margin-top: 1vh;
+        margin-right: 3vw;
+    }
+
+    .foto3 img {
+        height: 33vh;
+        margin-top: 25vh;
+        margin-left: -35vw;
+    }
+
+    .foto4 img {
+        margin-top: 1vh;
+        width: 85vw;
+        margin-bottom: -5vh;
+    }
+
+    .text4 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        font-size: 1em;
+    }
+
+    .foto5 img {
+        height: 28vh;
+        margin-left: -35vw;
+        margin-top: -10vh;
+        margin-bottom: 20vh;
+    }
+
+    .text5 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+    .text5-1 {
+        margin-top: 4vh;
+        margin-bottom: -15vh;
+        font-size: 1em;
+    }
+
+    .text6 {
+            margin-right: 5vw;
+            margin-left: -1vw;
+            font-size: 1em;
+    }
+
+    .foto6 img {
+        margin-top: 10vh;
+        margin-left: -35vw;
+        height: 33vh;
+        margin-bottom: 20vh;
+    }
+
+    .opisanie {
+        margin-bottom: -15vh;
+    }
+
+    .opisanie2 {
+        margin-top: 1vh;
+        margin-bottom: -0.5vh;
+    }
+
+    .opisanie1 {
+        margin-top: -20vh;
+    }
+
+    .foto7 img {
+        height: 30vh;
+        margin-top: -15vh;
+        margin-left: -15vh;
+    }
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 10.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+}
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: -0.5vh;
+    }
+
+    nav {
+        margin-left: -20vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 1em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text {
+        font-size: 1em;
+        margin-left: -1vw; /* Корректируем отступ справа */
+        margin-right: 7vw;
+        margin-bottom: 40vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+    }
+
+    .foto1 img {
+        height: 13vh;
+        margin-bottom: -4vh;
+    }
+
+    .wapper {
+        width: 82vw;
+        margin-left: -49vw;
+    }
+    .slide img {
+        width: 90vw;
+    }
+
+    .control a {
+        width: 3vw;
+        height: 2vh;
+        padding: 0.1vh 0.2vh;
+    }
+
+    .foto2 img {
+        height: 32vh;
+        margin-left: 35vw;
+        margin-bottom: 27vh;
+    }
+
+    .text1 {
+        margin-right: 4vw;
+        margin-left: 0.5vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+
+    .line {
+        width: 85vw;
+    }
+
+    .text3 {
+        margin-top: 1vh;
+        margin-right: 3vw;
+        font-size: 1em;
+    }
+
+    .foto3 img {
+        height: 33vh;
+        margin-top: 25vh;
+        margin-left: -35vw;
+    }
+
+    .foto4 img {
+        margin-top: 1vh;
+        width: 85vw;
+        margin-bottom: -5vh;
+    }
+
+    .text4 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        font-size: 1em;
+    }
+
+    .foto5 img {
+        height: 33vh;
+        margin-left: -35vw;
+        margin-top: -10vh;
+        margin-bottom: 20vh;
+    }
+
+    .text5 {
+        margin-top: -19vh;
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+
+    .text5-1 {
+        margin-top: 4vh;
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -15vh;
+    }
+
+    .text6 {
+            margin-right: 5vw;
+            margin-left: 2vw;
+    }
+
+    .foto6 img {
+        margin-top: 10vh;
+        margin-left: -35vw;
+        height: 33vh;
+        margin-bottom: 20vh;
+    }
+
+    .opisanie {
+        margin-bottom: -15vh;
+    }
+
+    .opisanie2 {
+        margin-top: 1vh;
+        margin-bottom: -0.5vh;
+    }
+
+    .opisanie1 {
+        margin-top: -20vh;
+    }
+
+    .foto7 img {
+        height: 30vh;
+        margin-top: -15vh;
+        margin-left: -15vh;
+    }
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 15.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+}   
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: -0.5vh;
+    }
+
+    nav {
+        margin-left: -20vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 1em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text {
+        font-size: 1em;
+        margin-left: -1vw; /* Корректируем отступ справа */
+        margin-right: 7vw;
+        margin-bottom: 40vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+    }
+
+    .foto1 img {
+        height: 13vh;
+        margin-bottom: -4vh;
+    }
+
+    .wapper {
+        width:72vw;
+        margin-left: -46vw;
+    }
+    .slide img {
+        width: 90vw;
+    }
+
+    .control a {
+        width: 3vw;
+        height: 2vh;
+        padding: 0.1vh 0.2vh;
+    }
+
+    .foto2 img {
+        height: 32vh;
+        margin-left: 35vw;
+        margin-bottom: 27vh;
+    }
+
+    .text1 {
+        margin-right: 4vw;
+        margin-left: 0.5vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+
+    .line {
+        width: 85vw;
+    }
+
+    .text3 {
+        margin-top: 1vh;
+        margin-right: 3vw;
+        font-size: 1em;
+    }
+
+    .foto3 img {
+        height: 33vh;
+        margin-top: 25vh;
+        margin-left: -35vw;
+    }
+
+    .foto4 img {
+        margin-top: 1vh;
+        width: 85vw;
+        margin-bottom: -5vh;
+    }
+
+    .text4 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        font-size: 1em;
+    }
+
+    .foto5 img {
+        height: 33vh;
+        margin-left: -35vw;
+        margin-top: -10vh;
+        margin-bottom: 20vh;
+    }
+
+    .text5 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+    .text5-1 {
+        margin-top: 4vh;
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -15vh;
+        font-size: 1em;
+    }
+    .text6 {
+            margin-right: 5vw;
+            margin-left: 5vw;
+            font-size: 1em;
+    }
+
+    .foto6 img {
+        margin-top: 10vh;
+        margin-left: -35vw;
+        height: 33vh;
+        margin-bottom: 20vh;
+    }
+
+    .opisanie {
+        margin-bottom: -15vh;
+    }
+
+    .opisanie2 {
+        margin-top: 1vh;
+        margin-bottom: -0.5vh;
+    }
+
+    .opisanie1 {
+        margin-top: -20vh;
+    }
+
+    .foto7 img {
+        height: 30vh;
+        margin-top: -15vh;
+        margin-left: -15vh;
+    }
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 21.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: 3.5vh;
+    }
+
+    nav {
+        margin-left: -6vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 1em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text {
+        font-size: 1em;
+        margin-left: -1vw; /* Корректируем отступ справа */
+        margin-right: 7vw;
+        margin-bottom: 40vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+    }
+
+    .foto1 img {
+        height: 25vh;
+        margin-bottom: -4vh;
+    }
+
+    .wapper {
+        width:40vw;
+        margin-left: -28vw;
+    }
+    .slide img {
+        width: 90vw;
+    }
+
+    .control a {
+        width: 3vw;
+        height: 2vh;
+        padding: 0.1vh 0.2vh;
+    }
+
+    .foto2 img {
+        height: 32vh;
+        margin-left: 35vw;
+        margin-bottom: 27vh;
+    }
+
+    .text1 {
+        margin-right: 4vw;
+        margin-left: 0.5vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+
+    .line {
+        width: 85vw;
+    }
+
+    .text3 {
+        margin-top: 1vh;
+        margin-right: 3vw;
+        font-size: 1em;
+    }
+
+    .foto3 img {
+        height: 33vh;
+        margin-top: 25vh;
+        margin-left: -35vw;
+    }
+
+    .foto4 img {
+        margin-top: 1vh;
+        width: 85vw;
+        margin-bottom: -5vh;
+    }
+
+    .text4 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        font-size: 1em;
+    }
+
+    .foto5 img {
+        height: 33vh;
+        margin-left: -35vw;
+        margin-top: -10vh;
+        margin-bottom: 20vh;
+    }
+
+    .text5 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+    .text5-1 {
+        margin-top: 4vh;
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -15vh;
+        font-size: 1em;
+    }
+    .text6 {
+        margin-top: 3vh;
+        margin-bottom: -2vh;
+        margin-right: 5vw;
+        font-size: 1em;
+    }
+
+    .foto6 img {
+        margin-top: 10vh;
+        margin-left: -35vw;
+        height: 33vh;
+        margin-bottom: 20vh;
+    }
+
+    .opisanie {
+        margin-bottom: -15vh;
+    }
+
+    .opisanie2 {
+        margin-top: 1vh;
+        margin-bottom: -0.5vh;
+    }
+
+    .opisanie1 {
+        margin-top: -20vh;
+    }
+
+    .foto7 img {
+        height: 30vh;
+        margin-top: -15vh;
+        margin-left: -15vh;
+    }
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 32.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+}   
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    body {
+        max-width: 1024px;
+        min-width: 769px;
+    }
+    
+    .fon {
+        --header-background-image-height: 23vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 5vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo {
+       margin-left: -10vw;
+    }
+
+    .logo img {
+        height: 15vh;
+        margin-top: 16.5vh;
+        margin-left: 0.5vw;
+    }
+
+    nav {
+        margin-left: -3vw;
+        margin-top: 15vh;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.5vh 1vh;
+    }
+    
+    main {
+        margin-top: 13vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: 1vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 1em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        margin-left: 28vw;
+        width: 40vw; /* Увеличиваем длину линии */
+    }
+    
+    .text {
+        font-size: 1em;
+        margin-left: -1vw; /* Корректируем отступ справа */
+        margin-right: 7vw;
+        margin-bottom: 40vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+    }
+
+    .foto1 img {
+        height: 30vh;
+        margin-bottom: -4vh;
+    }
+
+    .wapper {
+        width: 30vw;
+        margin-left: -19vw;
+    }
+    .slide img {
+        width: 50vw;
+    }
+
+    .control a {
+        width: 1vw;
+        height: 0.8vh;
+        padding: 0.4vh 0.5vh;
+    }
+
+    .foto2 img {
+        height: 34vh;
+        margin-left: 42vw;
+        margin-top: -1vh;
+        margin-bottom: 27vh;
+    }
+    
+
+    .text1 {
+        margin-right: 4vw;
+        margin-left: 0.5vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+
+    .line {
+        width: 85vw;
+    }
+
+    .text3 {
+        margin-top: 1vh;
+        margin-right: 3vw;
+        font-size: 1em;
+    }
+
+    .foto3 img {
+        height: 33vh;
+        margin-top: 25vh;
+        margin-left: -29vw;
+    }
+
+    .foto4 img {
+        margin-top: 1vh;
+        width: 85vw;
+        margin-bottom: -3vh;
+    }
+
+    .text4 {
+        margin-right: 5vw;
+        margin-left: -1vw;
+        font-size: 1em;
+    }
+
+    .foto5 img {
+        height: 35vh;
+        margin-top: 5vh;
+    }
+
+    .foto5 {
+        margin: 0;
+    }
+
+    .text5 {
+        margin-top: 5vh;
+        margin-right: 5vw;
+        margin-left: -1vw;
+        margin-bottom: -1vh;
+        font-size: 1em;
+    }
+    .text5-1 {
+        margin-top: 3vh;
+        margin-right: 5vw;
+        margin-left: -6vw;
+        margin-bottom: 11vh;
+        font-size: 1em;
+    }
+
+    .text6 {
+            margin-right: 5vw;
+            margin-left: -1vw;
+            margin-top: 4vh;
+            margin-bottom: -0.5vh;
+            font-size: 1em;
+    }
+
+    .foto6 img {
+        margin-top: -15vh;
+        margin-left: -27vw;
+        height: 33vh;
+    }
+
+    .opisanie {
+        margin-top: 1vh;
+        margin-right: 6vw
+    }
+
+    .opisanie2 {
+        margin-top: 1vh;
+        margin-bottom: -0.5vh;
+        margin-right: 8vw;
+    }
+
+    .opisanie1 {
+        margin-top: 1vh;
+        margin-right: -3vw;
+    }
+
+    .foto7 img {
+        height: 30vh;
+        margin-top: 1vh;
+        margin-left: 7vw;
+    }
+
+    .foto7 {
+        margin: 0;
+    }
+
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.9vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 9vh;
+}
+
+.seti {
+    margin-left: 33.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+    text-align: center;
+}
+}

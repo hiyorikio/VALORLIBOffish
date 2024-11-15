@@ -1,0 +1,960 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+    background-color: #0f1722;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif; /* Добавлен запасной шрифт */
+    font-size: 2vh;
+    margin: 0; /* Убираем отступы по умолчанию у body */
+}
+
+.fon {
+    --header-background-image-height: 24.8vh;
+    --theme-background-image-opacity: 1;
+    background-image: linear-gradient(to bottom, transparent, #0f1722 80%), url('image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: var(--header-background-image-height);
+    margin-bottom: calc(var(--header-background-image-height) * -1);
+    opacity: var(--theme-background-image-opacity);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+
+header {
+    width: 100%;
+    height: 13vh; /* Высота заголовка в процентах от высоты вьюпорта */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.logo img {
+    height: 15vh; /* Высота логотипа */
+    margin-top: 10vh; /* Добавляем отступ сверху */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh; /* Высота заголовка, чтобы не накладывался контент навигации */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем отступы по умолчанию */
+}
+
+nav ul li {
+    margin: 0 0.5vh;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 0.5vh 4vh;
+}
+
+main {
+    margin-top: 7.5vh; /* Отступ от шапки */
+    display: flex;     /* Используем Flexbox для центровки */
+    justify-content: center; /* Центруем контейнер по горизонтали */
+    align-items: flex-start; /* Выровнять контейнер по верхней части */
+    margin-bottom: 4vh;
+}
+
+.conteiner {
+    background-color: #161F2C;
+    display: flex;
+    flex-direction: column; /* Вертикальное размещение содержимого */
+    justify-content: center; /* Центрируем содержимое по вертикали внутри контейнера */
+    align-items: center;    /* Центрируем содержимое по горизонтали */
+    border-radius: 2vh;   /* Закругленные углы */
+    width: 150vh;          /* Ширина контейнера */
+}
+
+.name {
+    color: #D80029;
+    font-family: "Secular One";
+    margin-top: 5vh;
+    margin-left: -110vh;
+}
+
+.line1 {
+    border: none;
+    margin-left: 7.5vh;
+    height: 0.3vh;
+    width: 50vh;
+    background-color: #D80029;
+    margin-top: -2vh;
+    margin-bottom: 4vh;
+}
+
+p {
+    margin-top: 3vh;
+    color: #DCDCDC;
+    margin-left: 7.5vh;
+    line-height: 3vh;
+}
+
+.map img {
+    height: 50vh;
+}
+
+.carousel__viewport img {
+    width: 50vw;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.carousel__viewport{
+    display: flex; /* Используем flexbox для размещения изображений в ряд */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 3vh;
+    border: 0.5vh solid #0f1722;
+}
+
+.carousel__snapper a { /*кнопки*/
+    text-decoration: none;
+    color: #DCDCDC;
+    font-size: 4vh;
+    transition: background 0.3s; 
+}
+
+
+.slide-show {
+    margin-top: -1vh;
+    margin-bottom: 4vh;
+    width: 50vw;
+}
+
+.carousel__viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__snapper {
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    position: relative; /* Позволяет позиционировать кнопки абсолютно */
+}
+
+.carousel__prev,
+.carousel__next {
+    position: absolute; /* Позволяет кнопкам находиться поверх изображения */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Сдвигаем кнопки вверх на половину их высоты */
+    color: #DCDCDC;
+    font-size: 4vh;
+    transition: background 0.3s;
+}
+
+.carousel__prev {
+    left: 10px; /* Отступ от левого края */
+}
+
+.carousel__next {
+    right: 10px; /* Отступ от правого края */
+}
+
+.title {
+    color: #D80029;
+    font-family: "Secular One";
+    margin-top: -5vh;
+    margin-bottom: 1.5vw;
+}
+
+.text1 {
+    margin-left: 7vw;
+    margin-right: 34vw;
+    margin-top: -3vh;
+}
+
+.logo_rol img {
+    height: 7vh;
+}
+
+.logo_rol {
+    margin-left: -2.5vw;
+    margin-top: -5.3vw;
+}
+
+.line2 {
+    border: none;
+    margin-left: 44vw;
+    height: 0.3vh;
+    width: 30vw;
+    background-color: #D80029;
+    margin-top: 7vh;
+    margin-bottom: 4vh;
+}
+
+.line3 {
+    border: none;
+    margin-left: 44vw;
+    height: 0.4vh;
+    width: 30vw;
+    background-color: #D80029;
+    margin-top: 7vh;
+    margin-bottom: 4vh;
+}
+
+.agent img {
+    height: 20vh;
+}
+
+.agent {
+    margin-right: -40vw;
+    margin-top: -8vh;
+    margin-bottom: -6.5vh;
+}
+
+.logo_rol1 img {
+    height: 7vh;
+}
+
+.logo_rol1 {
+    margin-left: -2.5vw;
+    margin-top: -7vh;
+}
+
+footer {
+    background-color: #111111;
+    width: 100%;
+    height: 1%; /* Высота в процентах от высоты вьюпорта */
+    bottom: 0;
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+a {
+    text-decoration: none;
+}
+
+.flogo {
+    margin-right: auto; /* Отодвигает текст вправо */
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+}
+
+.flogo img {
+    height: 11.5vh; /* Высота логотипа */
+}
+
+.ftext {
+    color: #fff;
+    font-family: 'Secular One', sans-serif; /* Добавлен запасной шрифт */
+    font-size: 1.5vh;
+    margin-top: 7.5vh;
+    margin-left: -49.5vw;
+    flex-grow: 1; /* Позволяет тексту занимать оставшееся пространство */
+    text-align: center; /* Выравнивание текста по центру */
+    user-select: none; /*Запрещает копирование текста*/
+}
+
+.ogran {
+    margin-left: auto;
+    margin-top: 2vh;
+    margin-right: 3vh;
+}
+
+.ogran img {
+    height: 6vh;
+    border-radius: 1vh;
+}
+
+.seti img {
+    height: 4vh;
+    border-radius: 1.5vh;
+}
+
+.seti {
+    margin-left: 27vw;
+    margin-top: -1.5vh;
+}
+
+.logo_val img {
+    height: 9vh;
+}
+
+.logo_val {
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 320px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: -0.5vh;
+    }
+
+    nav {
+        margin-left: -20vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 0.8em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text1 {
+        font-size: 1em;
+        margin-left: 30vw; /* Корректируем отступ справа */
+        margin-right: 5vw;
+        margin-top: 1vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+        margin-top: -2vh;
+    }
+
+    .map img {
+        height: 20vh;
+        margin-bottom: 2vh;
+    }
+
+    .slide-show {
+        width: 85vw;
+    }
+    .carousel__viewport img {
+        width: 85vw;
+    }
+
+    .logo_rol img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    .logo_rol {
+        margin-top: -12vh;
+    }
+
+    .agent img {
+        height: 13vh;
+    }
+    .agent {
+        margin-top: 1vh;
+        margin-left: -39vw;
+    }
+
+    .line2, .line3 {
+        width: 80vw;
+        margin-left: 7vw;
+    }
+
+    .logo_rol1 img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 11.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+}
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: -0.5vh;
+    }
+
+    nav {
+        margin-left: -20vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 0.8em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text1 {
+        font-size: 1em;
+        margin-left: 30vw; /* Корректируем отступ справа */
+        margin-right: 5vw;
+        margin-top: 1vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+        margin-top: -2vh;
+    }
+
+    .map img {
+        height: 20vh;
+        margin-bottom: 2vh;
+    }
+
+    .slide-show {
+        width: 85vw;
+    }
+    .carousel__viewport img {
+        width: 85vw;
+    }
+
+    .logo_rol img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    .logo_rol {
+        margin-top: -12vh;
+    }
+
+    .agent img {
+        height: 13vh;
+    }
+    .agent {
+        margin-top: 1vh;
+        margin-left: -45vw;
+    }
+
+    .line2, .line3 {
+        width: 80vw;
+        margin-left: 7vw;
+    }
+
+    .logo_rol1 img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 17.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+} 
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: -0.5vh;
+    }
+
+    nav {
+        margin-left: -20vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 0.8em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text1 {
+        font-size: 1em;
+        margin-left: 30vw; /* Корректируем отступ справа */
+        margin-right: 5vw;
+        margin-top: 1vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+        margin-top: -2vh;
+    }
+
+    .map img {
+        height: 20vh;
+        margin-bottom: 2vh;
+    }
+
+    .slide-show {
+        width: 85vw;
+    }
+    .carousel__viewport img {
+        width: 85vw;
+    }
+
+    .logo_rol img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    .logo_rol {
+        margin-top: -12vh;
+    }
+
+    .agent img {
+        height: 13vh;
+    }
+    .agent {
+        margin-top: 1vh;
+        margin-left: -45vw;
+    }
+
+    .line2, .line3 {
+        width: 80vw;
+        margin-left: 7vw;
+    }
+
+    .logo_rol1 img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 20.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+} 
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    .fon {
+        --header-background-image-height: 25vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 18vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo img {
+        height: 10vh;
+        margin-top: 3.5vh;
+    }
+
+    nav {
+        margin-left: -6vw;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.3vh 0.5vh;
+    }
+    
+    main {
+        margin-top: 3vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: -1.5vh;
+        font-size: 1em;
+        margin-left: 2vw; /* Корректируем отступ слева */
+    }
+
+    .title {
+        font-size: 0.8em;
+        margin-left: 10vw;
+    }
+    
+    .line1 {
+        width: 70vw; /* Увеличиваем длину линии */
+    }
+    
+    .text1 {
+        font-size: 1em;
+        margin-left: 30vw; /* Корректируем отступ справа */
+        margin-right: 5vw;
+        margin-top: 1vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+        margin-top: -2vh;
+    }
+
+    .map img {
+        height: 20vh;
+        margin-bottom: 2vh;
+    }
+
+    .slide-show {
+        width: 85vw;
+    }
+    .carousel__viewport img {
+        width: 85vw;
+    }
+
+    .logo_rol img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    .logo_rol {
+        margin-top: -5vh;
+    }
+
+    .agent img {
+        height: 18vh;
+    }
+    .agent {
+        margin-top: -9vh;
+        margin-left: -45vw;
+    }
+
+    .line2, .line3 {
+        width: 80vw;
+        margin-left: 7vw;
+    }
+
+    .logo_rol1 img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.5vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 6vh;
+}
+
+.seti {
+    margin-left: 32.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .fon {
+        --header-background-image-height: 23vh; /* Увеличиваем высоту фона */
+        margin-right: 0;
+    }
+    
+    header {
+        height: 5vh; /* Увеличиваем высоту заголовка */
+    }
+
+    .logo {
+       margin-left: -10vw;
+    }
+
+    .logo img {
+        height: 15vh;
+        margin-top: 16.5vh;
+        margin-left: 0.5vw;
+    }
+
+    nav {
+        margin-left: -3vw;
+        margin-top: 15vh;
+    }
+    
+    nav ul li a {
+        font-size: 0.7em; /* Уменьшаем размер шрифта ссылок */
+        padding: 0.5vh 1vh;
+    }
+    
+    main {
+        margin-top: 13vh; /* Увеличиваем отступ сверху */
+    }
+    
+    .conteiner {
+        width: 95vw; /* Увеличиваем ширину контейнера */
+    }
+    
+    .name {
+        margin-top: 1vh;
+        font-size: 0.8em;
+        margin-left: 10vw;
+        }
+
+    .title {
+        font-size: 0.8em;
+        margin-left: 10vw;
+    }
+
+    .line1 {
+        width: 40vw; /* Увеличиваем длину линии */
+        margin-left: 30vw;
+    }
+    
+    .text1 {
+        font-size: 1em;
+        margin-left: 30vw; /* Корректируем отступ справа */
+        margin-right: 5vw;
+        margin-top: 1vh;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-left: 4vw; /* Корректируем отступ слева */
+        margin-top: -2vh;
+    }
+
+    .map img {
+        height: 35vh;
+        margin-bottom: 2vh;
+    }
+
+    .slide-show {
+        width: 85vw;
+    }
+    .carousel__viewport img {
+        width: 85vw;
+    }
+
+    .logo_rol img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+    .logo_rol {
+        margin-top: -8vh;
+    }
+
+    .agent img {
+        height: 20vh;
+    }
+    .agent {
+        margin-top: 1vh;
+        margin-left: -30vw;
+    }
+
+    .line2, .line3 {
+        width: 70vw;
+        margin-left: 20vw;
+    }
+
+    .logo_rol1 img {
+        height: 7vh;
+        margin-left: -20vw;
+    }
+
+
+    footer {
+        height: 10%; /* Увеличиваем высоту футера */
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+.flogo {
+    margin-left: 1vw;
+}
+
+.seti img, .logo_val img, .ogran img {
+    height: 3.9vh;
+}
+
+.ogran {
+    margin-top:5vh;
+}
+
+.flogo img {
+    height: 9vh;
+}
+
+.seti {
+    margin-left: 33.5vw;
+}
+.ftext {
+    font-size: 0.6em;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1240px) {
+    .line2, .line3 {
+        width: 41%;
+        margin-left: 43vw;
+    }
+}
