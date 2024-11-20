@@ -93,14 +93,14 @@ main {
     color: #D80029;
     font-family: "Secular One";
     margin-top: 5vh;
-    margin-left: -110vh;
+    margin-left: -55vw;
 }
 
 .line1 {
     border: none;
-    margin-left: 7.5vh;
+    margin-left: 5vw;
     height: 0.3vh;
-    width: 50vh;
+    width: 23.5vw;
     background-color: #D80029;
     margin-top: -2vh;
     margin-bottom: 4vh;
@@ -109,7 +109,7 @@ main {
 p {
     margin-top: 0.5vh;
     color: #DCDCDC;
-    margin-left: 7.5vh;
+    margin-left: 5.5vw;
     margin-right: 6vw;
     line-height: 3vh;
 }
@@ -131,7 +131,7 @@ p {
 }
 
 .slide {
-    height: 35vh;
+    height: 38vh;
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -144,7 +144,7 @@ p {
 
 .container {
     margin-left: 35vw;
-    margin-top: -39vh;
+    margin-top: -34vh;
     width: 20.1vw;
 }
 
@@ -203,7 +203,7 @@ p {
 
 .text3 {
     margin-top: 12vh;
-    margin-right: 30vw;
+    margin-right: 36vw;
 }
 
 .foto4 img {
@@ -212,7 +212,7 @@ p {
 }
 
 .text4 {
-    margin-left: 30vw;
+    margin-left: 34vw;
     margin-top: -28vh;
     margin-right: 3vw;
 }
@@ -223,7 +223,7 @@ p {
 }
 
 .text5, .text5-1 {
-    margin-right: 30vw;
+    margin-right: 35vw;
     margin-top: -20vh;
     margin-bottom: 12vh;
 }
@@ -235,7 +235,7 @@ p {
 }
 
 .text6 {
-    margin-right: 30vw;
+    margin-right: 35vw;
     margin-top: -22vh;
     margin-bottom: 17vh;
 }
@@ -247,17 +247,18 @@ p {
 
 .foto7 {
     margin-left: 35vw;
-    margin-top: 14vh;
+    margin-top: 13vh;
+    margin-bottom: 3vh;
 }
 
 .opisanie, .opisanie2 {
-    margin-right: 32vw;
+    margin-right: 36vw;
     margin-top: -20vh;
     margin-bottom: 10vh;
 }
 
 .opisanie1 {
-    margin-right: 30vw;
+    margin-right: 37vw;
     margin-top: -25vh;
 }
 
@@ -281,7 +282,7 @@ a {
 .flogo {
     margin-right: auto; /* Отодвигает текст вправо */
     margin-top: 3.5vh;
-    margin-left: 15vh;
+    margin-left: 5vw;
 }
 
 .flogo img {
@@ -302,7 +303,7 @@ a {
 .ogran {
     margin-left: auto;
     margin-top: 2vh;
-    margin-right: 3vh;
+    margin-right: 3vw;
 }
 
 .ogran img {
@@ -494,7 +495,7 @@ a {
 
     .foto7 img {
         height: 30vh;
-        margin-top: -15vh;
+        margin-top: -8vh;
         margin-left: -15vh;
     }
     footer {
@@ -695,7 +696,7 @@ a {
 
     .foto7 img {
         height: 30vh;
-        margin-top: -15vh;
+        margin-top: -9vh;
         margin-left: -15vh;
     }
     footer {
@@ -895,7 +896,7 @@ a {
 
     .foto7 img {
         height: 30vh;
-        margin-top: -15vh;
+        margin-top: -10vh;
         margin-left: -15vh;
     }
     footer {
@@ -1096,7 +1097,7 @@ a {
 
     .foto7 img {
         height: 30vh;
-        margin-top: -15vh;
+        margin-top: -10vh;
         margin-left: -15vh;
     }
     footer {

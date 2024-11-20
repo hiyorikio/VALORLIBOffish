@@ -88,18 +88,19 @@ main {
     border-radius: 2vh;   /* Закругленные углы */
     width: 150vh;          /* Ширина контейнера */
 }
+
 .name {
     color: #D80029;
     font-family: "Secular One";
     margin-top: 5vh;
-    margin-left: -110vh;
+    margin-left: -55vw;
 }
 
 .line1 {
     border: none;
-    margin-left: 7.5vh;
+    margin-left: 5vw;
     height: 0.3vh;
-    width: 50vh;
+    width: 23.5vw;
     background-color: #D80029;
     margin-top: -2vh;
     margin-bottom: 4vh;

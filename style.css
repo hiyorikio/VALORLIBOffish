@@ -52,7 +52,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 2vh;
-    padding: 1vh 3vh;
+    padding: 0.5vh 4vh;
 }
 
 main {
@@ -149,7 +149,7 @@ a {
     }
     
     header {
-        height: 13vh; /* Увеличиваем высоту заголовка */
+        height: 18vh; /* Увеличиваем высоту заголовка */
     }
 
     .logo img {
@@ -207,7 +207,7 @@ a {
 }
 
 .seti {
-    margin-left: 11.5vw;
+    margin-left: 15vw;
 }
 .ftext {
     font-size: 0.6em;
@@ -228,7 +228,7 @@ a {
     }
     
     header {
-        height: 13vh; /* Увеличиваем высоту заголовка */
+        height: 18vh; /* Увеличиваем высоту заголовка */
     }
 
     .logo img {
@@ -286,7 +286,7 @@ a {
 }
 
 .seti {
-    margin-left: 16.5vw;
+    margin-left: 20vw;
 }
 .ftext {
     font-size: 0.6em;
@@ -307,7 +307,7 @@ a {
     }
     
     header {
-        height: 13vh; /* Увеличиваем высоту заголовка */
+        height: 18vh; /* Увеличиваем высоту заголовка */
     }
 
     .logo img {
@@ -365,7 +365,7 @@ a {
 }
 
 .seti {
-    margin-left: 20.5vw;
+    margin-left: 24vw;
 }
 .ftext {
     font-size: 0.6em;
@@ -387,16 +387,17 @@ a {
     }
     
     header {
-        height: 13vh; /* Увеличиваем высоту заголовка */
+        height: 18vh; /* Увеличиваем высоту заголовка */
     }
 
     .logo img {
         height: 10vh;
-        margin-top: -0.5vh;
+        margin-top: 3.5vh;
     }
 
     nav {
-        margin-left: -20vw;
+        margin-left: -6vw;
+        margin-top: 10vh;
     }
     
     nav ul li a {
@@ -445,7 +446,7 @@ a {
 }
 
 .seti {
-    margin-left: 33.5vw;
+    margin-left: 37vw;
 }
 .ftext {
     font-size: 0.6em;
@@ -487,7 +488,7 @@ a {
     }
 
     nav {
-        margin-left: -5vw;
+        margin-left: -3vw;
         margin-top: 2vh;
     }
     
@@ -542,10 +543,11 @@ a {
 }
 
 .seti {
-    margin-left: 33.5vw;
+    margin-left: 35vw;
 }
 .ftext {
     font-size: 0.6em;
     text-align: center;
+    margin-left: -48vw;
 }
 }
